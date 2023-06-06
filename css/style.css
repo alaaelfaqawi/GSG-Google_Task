@@ -54,3 +54,98 @@ header .navigation span img{
     height: 22px;
 }
 /* End Header */
+/* Start Content */
+main {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+main form .serachEngine {
+    position: relative;
+}
+main form .serachEngine input {
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 25px;
+    outline: none;
+    background-color: var(--primary_color);
+    margin-bottom: 20px;
+    padding-left: 50px;
+    color: var(--navigation_color);
+    font-size: 18px;
+}
+main form .serachEngine input:focus{
+    color: var(--navigation_color);
+    font-size: 18px;
+}
+main form .serachEngine i {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+main form .serachEngine img {
+    cursor: pointer;
+}
+main form .serachEngine img:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+}
+main form .serachEngine img:nth-of-type(2) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+main form .btn {
+    display: flex;
+    justify-content: center;
+}
+main form .btn button {
+    margin-left: 20px;
+    color: var(--navigation_color);
+    padding: 10px 20px;
+    background-color: var(--btn_color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main .lang p {
+    color: var(--navigation_color);
+}
+main .lang p a {
+    text-decoration: none;
+    color: #7fa5e2;
+}
+@media (max-width: 500px) {
+    main form .serachEngine input {
+        width: 400px;
+    }
+}
+@media (max-width: 400px) {
+    main .googleImage img {
+        width: 250px;
+    }
+    main form .serachEngine input {
+        width: 350px;
+    }
+}
+@media (max-width: 350px) {
+    main .googleImage img {
+        width: 230px;
+    }
+    main form .serachEngine input {
+        width: 300px;
+    }
+    main form .btn button {
+        margin-left: 10px;
+    }
+}
+/* End Content */
